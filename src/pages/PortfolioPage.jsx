@@ -11,6 +11,10 @@ import image5a from "/portfolio/image5a.jpeg"
 import image5b from "/portfolio/image5b.jpeg"
 import image6a from "/portfolio/image6a.jpeg"
 import image6b from "/portfolio/image6b.jpeg"
+import image7a from "/portfolio/image7a.jpeg"
+import image7b from "/portfolio/image7b.jpeg"
+import image8a from "/portfolio/image8a.jpeg"
+import image8b from "/portfolio/image8b.jpeg"
 
 
 
@@ -45,11 +49,24 @@ function PortfolioPage() {
             alt: "Siding Repair",
             imageA: image5a,
             imageB: image5b
-        },        {
+        },
+        {
             id: 6,
             alt: "Starlink Install",
             imageA: image6a,
             imageB: image6b
+        },
+        {
+            id: 7,
+            alt: "Interior Painting",
+            imageA: image7a,
+            imageB: image7b
+        },
+        {
+            id: 8,
+            alt: "Interior Painting",
+            imageA: image8a,
+            imageB: image8b
         },
         ];
 

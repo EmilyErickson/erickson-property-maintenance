@@ -5,6 +5,7 @@
 }
 body {
     margin: 0;
+    font-family: Helvetica, sans-serif;
     --dark-grey: #bec4cd;
     --dark-grey-accent: #969aa2;
     --light-grey: #dddddd;
@@ -88,6 +89,7 @@ nav {
     align-items: center;
     justify-content: center;
     padding: 5rem 0;
+    text-align: center;
 }
 
 .skills {
@@ -214,7 +216,12 @@ nav {
 
 /* PORTFOLIO */
 .portfolio-page {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing);
+    padding: var(--wide-spacing);
 }
 .image-container {
     display: flex;
@@ -223,18 +230,29 @@ nav {
     justify-content: center;
     gap: var(--wide-spacing);
 }
-
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing);
+}
 .image-item img {
-    height: 10rem;
+    border-radius: 5%;
+    height: 11rem;
+    width: 45%;
+    object-fit: cover;
 }
 .image-item {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 16rem;
-    height: 12rem;
-    background-color: var(--dark-grey);
+    width: 18rem;
+    height: 14rem;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: -1px 2px 4px var(--dark-grey-accent);
+    border: 1px solid var(--dark-grey-accent);
 }
 
 /* LEGAL */

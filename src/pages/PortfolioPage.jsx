@@ -1,29 +1,69 @@
 import "./homePage.css";
-import image1 from "/portfolio/image1.png"
-import image2 from "/portfolio/image2.png"
-import image3 from "/portfolio/image3.png"
-import image4 from "/portfolio/image4.png"
-import image5 from "/portfolio/image5.png"
+import image1a from "/portfolio/image1a.jpeg"
+import image1b from "/portfolio/image1b.jpeg"
+import image2a from "/portfolio/image2a.jpeg"
+import image2b from "/portfolio/image2b.jpeg"
+import image3a from "/portfolio/image3a.jpeg"
+import image3b from "/portfolio/image3b.jpeg"
+import image4a from "/portfolio/image4a.jpeg"
+import image4b from "/portfolio/image4b.jpeg"
+import image5a from "/portfolio/image5a.jpeg"
+import image5b from "/portfolio/image5b.jpeg"
+import image6a from "/portfolio/image6a.jpeg"
+import image6b from "/portfolio/image6b.jpeg"
 
 
 
 function PortfolioPage() {
     const imageList = [
-        { id: 1, src: image1, alt: 'Starlink Install' },
-        { id: 2, src: image2, alt: 'Bathroom Remodel' },
-        { id: 3, src: image3, alt: 'Pantry Remodel' },
-        { id: 4, src: image4, alt: 'Starlink Install' },
-        { id: 5, src: image5, alt: 'Exterior Painting' },
-    ];
+        {
+            id: 1,
+            alt: "Bathroom Remodel",
+            imageA: image1a,
+            imageB: image1b
+        },
+        {
+            id: 2,
+            alt: "Pantry Remodel",
+            imageA: image2a,
+            imageB: image2b
+        },
+        {
+            id: 3,
+            alt: "Exterior Painting",
+            imageA: image3a,
+            imageB: image3b
+        },
+        {
+            id: 4,
+            alt: "Bathroom Flooring Replacement",
+            imageA: image4a,
+            imageB: image4b
+        },
+        {
+            id: 5,
+            alt: "Siding Repair",
+            imageA: image5a,
+            imageB: image5b
+        },        {
+            id: 6,
+            alt: "Starlink Install",
+            imageA: image6a,
+            imageB: image6b
+        },
+        ];
 
     return (
         <div className="home-page portfolio-page">
-            <h2>Portfolio</h2>
+            <h2>Job Portfolio</h2>
             <div className="image-container">
                 {imageList.map((image) => (
                     <div key={image.id} className="image-item">
                         <h4>{image.alt}</h4>
-                        <img src={image.src} alt={image.alt} />
+                        <div className="images">
+                            <img src={image.imageA} alt={`${image.alt} before`} />
+                            <img src={image.imageB} alt={`${image.alt} after`}/>
+                        </div>
                     </div>
                 ))}
             </div>

@@ -152,7 +152,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: var(--page-height);
+    min-height: var(--page-height);
 }
 .about-background {
     display: grid;
@@ -183,7 +183,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: var(--page-height);
+    min-height: var(--page-height);
 }
 
 .contact-page > h1 {
@@ -326,7 +326,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: var(--page-height);
+    min-height: var(--page-height);
     width: 100%;
     padding: var(--wide-spacing);
     color: white;

@@ -121,13 +121,19 @@ nav {
 .image-gallery-image {
     height: 15rem;
 }
+
 .facebook-link {
     font-size: var(--fontsize);
+    margin-top: var(--spacing);
     padding: var(--wide-spacing);
     text-align: center;
 }
-.facebook-link a {
+.facebook-a {
     color: black;
+}
+.facebook-a:hover {
+    cursor: pointer;
+    font-size: calc(var(--fontsize) * 1.1);
 }
 
 .home-about {
@@ -230,6 +236,7 @@ nav {
     justify-content: center;
     gap: var(--spacing);
     padding: var(--wide-spacing);
+    min-height: var(--page-height);
 }
 .image-container {
     display: flex;
@@ -270,9 +277,13 @@ nav {
     align-items: center;
     justify-content: center;
     padding: var(--spacing);
+    min-height: var(--page-height);
 }
 .legal-page h2 {
     padding: var(--spacing);
+}
+.legal-container {
+    width: 80%;
 }
 .legal-container, .pdfs {
     display: flex;
@@ -300,6 +311,8 @@ nav {
     border: 2px solid black;
     border-radius: 12px;
     width: 10rem;
+    height: 15rem;
+    padding: var(--spacing);
 }
 .pdf-box a {
     color: black;

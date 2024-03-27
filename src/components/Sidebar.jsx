@@ -16,11 +16,11 @@ function Sidebar() {
     </button>
     <nav className={`sidebar ${isOpen ? 'open' : 'hidden'}`}>
       <div className="sidebar-container">
-        <Link to="/" className='sidebar-link home'>Home</Link>
-        <Link to="/about" className='sidebar-link about'>About</Link>
-        <Link to="/contact" className='sidebar-link contact'>Contact</Link>
-        <Link to="/portfolio" className='sidebar-link portfolio'>Portfolio</Link>
-        <Link to="/legal" className='sidebar-link legal'>Legal</Link>
+        <Link to="/" className='sidebar-link home' onClick={toggleMenu}>Home</Link>
+        <Link to="/about" className='sidebar-link about' onClick={toggleMenu}>About</Link>
+        <Link to="/contact" className='sidebar-link contact' onClick={toggleMenu}>Contact</Link>
+        <Link to="/portfolio" className='sidebar-link portfolio' onClick={toggleMenu}>Portfolio</Link>
+        <Link to="/legal" className='sidebar-link legal' onClick={toggleMenu}>Legal</Link>
       </div>
     </nav>
     </ div>
